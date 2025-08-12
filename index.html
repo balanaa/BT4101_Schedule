@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            const date = new Date();
+            const dayOfWeek = date.getDay();
+
+            switch(dayOfWeek) {
+                case 2:
+                    window.location.href = "Tuesday.html";
+                    break;
+                case 3:
+                    window.location.href = "Wednesday.hmtl";
+                    break;
+                case 4:
+                    window.location.href = "Thursday.html";
+                    break;
+                case 5:
+                    window.location.href = "Friday.html";
+                    break;
+                case 6:
+                    window.location.href = "Saturday.html";
+                    break;
+                default:
+                    //full class sched
+                    break;
+            }
+        }
+    </script>
+</head>
+</html>

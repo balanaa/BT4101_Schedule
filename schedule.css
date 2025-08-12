@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+table {
+    background-color: gray;
+    border-collapse: collapse;
+    min-width: 590px; /*Magiiba pa'to*/
+
+    margin-bottom: 1rem;
+}
+
+caption {
+    padding:  1rem 0;
+}
+
+td, th {
+    border: 1px solid white;
+    border-collapse: collapse;
+
+    padding: 0 .5em;
+}
+
+
+#wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+a.sideButtons {
+    width:20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.sideButtons:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+#verticalWrapper{
+    margin: auto;
+    margin-top: 0;
+}
+
+#clock {
+    font-size: 2rem;
+}
