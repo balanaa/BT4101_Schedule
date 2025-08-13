@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        window.onload = function(){
-            const date = new Date();
-            const dayOfWeek = date.getDay();
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Schedule BT4101</title>
+        <script>
+            window.onload = function(){
+                const date = new Date();
+                const dayOfWeek = date.getDay();
 
-            switch(dayOfWeek) {
-                case 2:
-                    window.location.href = "Tuesday.html";
-                    break;
-                case 3:
-                    window.location.href = "Wednesday.html";
-                    break;
-                case 4:
-                    window.location.href = "Thursday.html";
-                    break;
-                case 5:
-                    window.location.href = "Friday.html";
-                    break;
-                case 6:
-                    window.location.href = "Saturday.html";
-                    break;
-                default:
-                    //full class sched
-                    break;
+                switch(dayOfWeek) {
+                    case 2:
+                        window.location.href = "tuesday.html";
+                        break;
+                    case 3:
+                        window.location.href = "wednesday.html";
+                        break;
+                    case 4:
+                        window.location.href = "thursday.html";
+                        break;
+                    case 5:
+                        window.location.href = "friday.html";
+                        break;
+                    case 6:
+                        window.location.href = "saturday.html";
+                        break;
+                    default:
+                        //full class sched
+                        break;
+                }
             }
-        }
-    </script>
-</head>
+        </script>
+    </head>
 </html>

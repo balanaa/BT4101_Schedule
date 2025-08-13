@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
     color: inherit; 
@@ -17,11 +18,13 @@ body {
 }
 
 table {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.4);
     border-collapse: collapse;
     min-width: 590px; /*Magiiba pa'to*/
+}
 
-    margin-bottom: 1rem;
+th {
+    background-color: rgba(128, 128, 128, 0.6);
 }
 
 caption {
@@ -40,25 +43,53 @@ td, th {
     display: flex;
     width: 100vw;
     height: 100vh;
+
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 2vw;
 }
 
-a.sideButtons {
+a:hover {
+    color: rgb(218, 0, 0);
+}
+
+.sideButtons:hover {
+    font-weight:600;
+}
+
+.sideButtons {
+    flex: 1;
+    min-width:42px;
     width:20vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a:hover {
-    color: red;
-    font-weight:600;
+#verticalWrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-#verticalWrapper{
-    margin: auto;
-    margin-top: 0;
-}
 
 #clock {
     font-size: 2rem;
+    margin: auto 0  3rem  0;
+}
+
+tr:nth-of-type(1) th:first-child {
+    min-width: 6.5rem;
+}
+tr:nth-of-type(1) th:nth-child(2) {
+    width: 16rem;
+}
+tr:nth-of-type(1) th:nth-child(3) {
+    width: 12rem;
+}
+tr:nth-of-type(1) th:last-child {
+    width: 3.6rem;
 }
